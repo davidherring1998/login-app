@@ -3,22 +3,20 @@ import { Link } from "react-router-dom"; // links to pages
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { AiFillCustomerService } from "react-icons/ai";
+import "../assets/header.css";
 
 function Header() {
   return (
     <>
       <header>
-        <div className="logo">
-          <AiFillCustomerService /> 
-          MusicPage
-        </div>
+        <div className="logo">Music Page</div>
         <ul>
-            <li>
+          <li>
             <FaSignInAlt /> Login
-            </li>
-            <li>
+          </li>
+          <li>
             <FaUser /> Register
-            </li>
+          </li>
         </ul>
       </header>
     </>

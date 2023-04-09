@@ -1,0 +1,50 @@
+header {
+  background-color: #b2beb5;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid black;
+  justify-content: space-between;
+}
+.logo{
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 10px;
+
+}
+header ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-right: 10px;
+
+}
+header ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex; 
+  float: right;
+
+}
+header ul li:hover{
+    color: red;
+}
+@media screen and (max-width: 580px) {
+    .logo{
+        font-size: 15px;
+        white-space: nowrap;
+        margin-left: -35%;
+    }
+    header{
+        justify-content: center;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    .logo{
+        margin-right: -5%;
+        margin-left: -5%;
+    }
+    header{
+        justify-content: center;
+    }
+  }
