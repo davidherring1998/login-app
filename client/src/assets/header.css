@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: #b2beb5;
   opacity: 0.9;
   display: flex;
@@ -12,21 +12,21 @@ header {
     margin-left: 10px;
 
 }
-header ul {
+.header ul {
   list-style: none;
   display: flex;
   text-align: center;
   margin-right: 10px;
 
 }
-header ul li {
+.header ul li {
   padding-left: 10px;
   padding-right: 10px;
   display: flex; 
   float: right;
 
 }
-header ul li:hover{
+.header ul li:hover{
     color: red;
 }
 @media screen and (max-width: 580px) {
@@ -35,7 +35,7 @@ header ul li:hover{
         white-space: nowrap;
         margin-left: -35%;
     }
-    header{
+    .header{
         justify-content: center;
     }
   }
@@ -44,7 +44,7 @@ header ul li:hover{
         margin-right: -5%;
         margin-left: -5%;
     }
-    header{
+    .header{
         justify-content: center;
     }
   }

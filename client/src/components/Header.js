@@ -8,14 +8,14 @@ import "../assets/header.css";
 function Header() {
   return (
     <>
-      <header>
+      <header className="header">
         <div className="logo">Music Page</div>
         <ul>
           <li>
-            <FaSignInAlt /> Login
+            <FaSignInAlt /> &nbsp; Login
           </li>
           <li>
-            <FaUser /> Register
+            <FaUser /> &nbsp; Register
           </li>
         </ul>
       </header>

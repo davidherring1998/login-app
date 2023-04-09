@@ -3,14 +3,16 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "./components/Header";
 import Footer from './components/Footer'
+import Login from './pages/login'
+import Register from './pages/register';
+
 function App() {
   return (
     <>
       <Header />
+      <Register />
       <Router>
         <Routes>
-          <Route />
-          <Route />
         </Routes>
       </Router>
       <Footer />
