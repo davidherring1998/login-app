@@ -1,0 +1,23 @@
+{
+  "name": "login-app",
+  "version": "1.0.0",
+  "description": "#About:  Simple login app where a user can create and log into the webpage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidherring1998/login-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidherring1998/login-app/issues"
+  },
+  "homepage": "https://github.com/davidherring1998/login-app#readme",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
