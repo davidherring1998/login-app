@@ -3,6 +3,7 @@ import { FaSignInAlt } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { login, reset } from "../features/auth/authSlice";
 
 function Login() {
   const [data, setData] = useState({
@@ -10,7 +11,26 @@ function Login() {
     password: "",
   });
 
-  const {  email, password } = data;
+  const { email, password } = data;
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { user, isLoading, isError, isSuccess, message } = useSelector(
+    (state) => state.auth
+  );
+
+  useEffect(() => {
+    if (isError) {
+      toast.error(message);
+    }
+
+    if (isSuccess || user) {
+      navigate("/");
+    }
+
+    dispatch(reset());
+  }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   const onChange = (e) => {
     setData((prevState) => ({
@@ -26,6 +46,8 @@ function Login() {
       email,
       password,
     };
+
+    dispatch(login(userData));
   };
   return (
     <>
@@ -35,7 +57,7 @@ function Login() {
         </h1>
       </header>
       <section className="form">
-        <form onSubmit={onSubmit}> 
+        <form onSubmit={onSubmit}>
           <div className="form-div">
             <input
               type="text"

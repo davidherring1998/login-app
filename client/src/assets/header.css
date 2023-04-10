@@ -6,45 +6,49 @@
   border-bottom: 0.5px solid black;
   justify-content: space-between;
 }
-.logo{
-    font-weight: bold;
-    white-space: nowrap;
-    margin-left: 10px;
-
+.logo {
+  font-weight: bold;
+  white-space: nowrap;
+  margin-left: 10px;
 }
 .header ul {
   list-style: none;
   display: flex;
   text-align: center;
   margin-right: 10px;
-
 }
 .header ul li {
   padding-left: 10px;
   padding-right: 10px;
-  display: flex; 
+  display: flex;
   float: right;
-
 }
-.header ul li:hover{
-    color: red;
+.header ul li:hover {
+  color: red;
 }
 @media screen and (max-width: 580px) {
-    .logo{
-        font-size: 15px;
-        white-space: nowrap;
-        margin-left: -35%;
-    }
-    .header{
-        justify-content: center;
-    }
+  .logo {
+    font-size: 15px;
+    white-space: nowrap;
+    /* margin-left: -35%; */
   }
-  @media screen and (max-width: 475px) {
-    .logo{
-        margin-right: -5%;
-        margin-left: -5%;
-    }
-    .header{
-        justify-content: center;
-    }
+}
+@media screen and (max-width: 475px) {
+  .logo {
+    margin-right: -5%;
+    margin-left: -5%;
   }
+  .header {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logo{
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .header {
+    justify-content: center;
+    font-size: 10px;
+  }
+}

@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <header className="header">
-        <div className="logo">Music Page</div>
+        <div className="logo">Music Page <AiFillCustomerService /></div>
         <ul>
           <li>
             <FaSignInAlt /> &nbsp; Login
